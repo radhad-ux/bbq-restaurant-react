@@ -1,3 +1,13 @@
+import { useState } from "react";
+import Loader from "./components/Loader";
 export default function App() {
-  return <div className="App">Hello World!</div>;
+  const [status, setStatus] = useState(1);
+
+  return (
+    <div className="App">
+      {status === 0 && <p>Loading</p>}
+      {status === 1 && <Loader />}
+      {status === 2 && <p>Error Loading</p>}
+    </div>
+  );
 }
