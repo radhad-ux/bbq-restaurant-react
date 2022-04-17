@@ -1,5 +1,7 @@
 import { useState } from "react";
 import Loader from "./components/Loader";
+import "./styles/style.css";
+
 export default function App() {
   const [status, setStatus] = useState(1);
 

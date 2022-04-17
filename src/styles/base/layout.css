@@ -1,0 +1,30 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: "Raleway", sans-serif; */
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+}
+
+.App {
+  height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (min-width: 1024px) {
+  .App {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+}

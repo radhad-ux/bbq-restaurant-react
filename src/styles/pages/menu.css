@@ -1,0 +1,13 @@
+.menu_page {
+  margin-top: 80px;
+  background-image: url("../../assets/menu.jpg");
+  background-position: center;
+  background-size: cover;
+  min-width: 100vw;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #333333;
+}

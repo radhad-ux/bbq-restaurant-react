@@ -1,0 +1,22 @@
+[
+  {
+    "id": 0,
+    "description": "+46 764221662",
+    "imageURL": "phone.png"
+  },
+  {
+    "id": 1,
+    "description": "firehousebbq@hotmail.com",
+    "imageURL": "envelope.png"
+  },
+  {
+    "id": 2,
+    "description": "htttps://bbqrestaurant@twitter.com",
+    "imageURL": "twitter.png"
+  },
+  {
+    "id": 4,
+    "description": " Kungsgatan 54, 111 35 Stockholm",
+    "imageURL": "map.png"
+  }
+]
