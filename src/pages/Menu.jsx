@@ -1,4 +1,9 @@
+//Project files
+import { getCollection } from "../scripts/fireStore";
+
 export default function Menu() {
+  getCollection("menus");
+
   return (
     <div className="menu_page">
       <section className="hero">
