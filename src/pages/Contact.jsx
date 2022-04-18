@@ -13,7 +13,6 @@ export default function Contact() {
         <img className="contact_img" src={ContactHero} alt="People" />
         <h1>Contact</h1>
       </div>
-
       <div className="container">
         <div className="contact_list">{ContactList}</div>
         <Form />
