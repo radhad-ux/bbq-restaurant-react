@@ -1,4 +1,8 @@
 .menu_page {
+  background-color: #333333;
+  min-height: 100vh;
+}
+.menu_page .hero {
   margin-top: 80px;
   background-image: url("../../assets/menu.jpg");
   background-position: center;
@@ -9,5 +13,62 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #333333;
+}
+.menu_page .hero h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.menu_list {
+  display: flex;
+
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 10px auto;
+}
+.menu_list img {
+  height: auto;
+  max-height: 240px;
+  width: 100%;
+}
+
+.menu_card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+  margin: 10px;
+  height: 400px;
+  width: 360px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card_image {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.card_image img {
+  height: 300px;
+  width: 250px;
+  object-fit: cover;
+}
+
+.card_header {
+  margin-bottom: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #c0a756;
+}
+
+.menu_card .description {
+  padding: 8px;
+  line-height: 1.2;
+  color: #c0a756;
+  text-align: center;
 }
