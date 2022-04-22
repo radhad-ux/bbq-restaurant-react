@@ -38,6 +38,7 @@
 .menu_card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
   margin: 10px;
+  margin-bottom: 20px;
   height: 400px;
   width: 360px;
   display: flex;

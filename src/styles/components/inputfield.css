@@ -1,0 +1,39 @@
+form {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  background-color: #333333;
+  align-items: center;
+  min-height: 100vh;
+}
+form h2 {
+  color: #c0a756;
+}
+
+.input_field {
+  width: 40vw;
+  min-width: 400px;
+  margin: 20px auto;
+}
+.input_field label {
+  font-size: 20px;
+  color: #c0a756;
+}
+
+.input_field input[type="text"] {
+  margin: 10px auto;
+  padding: 10px;
+  width: 100%;
+  font-size: 16px;
+  display: flex;
+}
+
+.back_link {
+  display: flex;
+  color: #c0a756;
+  align-items: center;
+  justify-content: center;
+}
+.back_link img {
+  margin-right: 3px;
+}

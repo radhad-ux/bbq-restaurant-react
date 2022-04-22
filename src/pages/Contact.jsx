@@ -1,6 +1,7 @@
 import contactData from "../data/contact.json";
 import ContactItem from "../components/ContactItem";
 import Form from "../components/Form";
+import Map from "../components/Map";
 import ContactHero from "../assets/contactnew.jpg";
 
 export default function Contact() {
@@ -17,6 +18,9 @@ export default function Contact() {
         <div className="contact_list">{ContactList}</div>
         <Form />
       </div>
+      <section className="map-container">
+        <Map />
+      </section>
     </section>
   );
 }

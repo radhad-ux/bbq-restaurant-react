@@ -1,0 +1,14 @@
+{
+  "name": {
+    "label": "Product's name",
+    "placeholder": "Ex: Desserts"
+  },
+  "price": {
+    "label": "Product Price",
+    "placeholder": "Ex: 100 kr"
+  },
+  "imageURL": {
+    "label": "Avatar image URL",
+    "placeholder": "Ex: www.f1.com/dessert/applepie.png"
+  }
+}

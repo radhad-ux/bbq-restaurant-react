@@ -1,0 +1,14 @@
+{
+  "name": {
+    "label": "Category's name",
+    "placeholder": "Ex: Desserts"
+  },
+  "description": {
+    "label": "Category's description",
+    "placeholder": "Ex: A short description of the category"
+  },
+  "imageURL": {
+    "label": "Avatar image URL",
+    "placeholder": "Ex: www.f1.com/dessert/applepie.png"
+  }
+}

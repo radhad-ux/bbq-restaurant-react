@@ -4,8 +4,8 @@ import { getCollection, getDocument } from "../scripts/fireStore";
 
 import ProductCard from "../components/ProductCard";
 
-export default function Category() {
-  const { categoryId } = useParams();
+export default function AdminProduct() {
+  const { id } = useParams();
 
   const [document, setDocument] = useState({});
   const [list, setList] = useState([]);
@@ -13,8 +13,8 @@ export default function Category() {
 
   useEffect(() => {
     async function loadData() {
-      const documentData = await getDocument("menus", categoryId);
-      const listData = await getCollection(`menus/${categoryId}/content/`);
+      const documentData = await getDocument("menus", id);
+      const listData = await getCollection(`menus/${id}/content/`);
 
       setDocument(documentData);
       setList(listData);
@@ -24,7 +24,7 @@ export default function Category() {
   }, []);
 
   const ProductList = list.map((item) => (
-    <Link to={`/menu/${categoryId}/${item.id}`} key={item.id}>
+    <Link to={`/menu/${id}/${item.id}`} key={item.id}>
       <ProductCard key={item.id} item={item} />
     </Link>
   ));
@@ -32,12 +32,17 @@ export default function Category() {
   if (status === 0) return <p>Loading...</p>;
 
   return (
-    <div className="category_page">
-      <section className="hero">
+    <div className="admin_page">
+      <header className="admin_header">
         <img src={document.imageURL} alt="category item" />
         <h1>{document.name}</h1>
-      </section>
+      </header>
       <section className="menu_list">{ProductList}</section>
+      <div className="admin-add">
+        <Link to="/update/new-product" className="button_primary" id="btn_add">
+          Add product
+        </Link>
+      </div>
     </div>
   );
 }

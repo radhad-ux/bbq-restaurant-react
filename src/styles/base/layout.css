@@ -1,14 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800&display=swap");
+
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* font-family: "Raleway", sans-serif; */
   scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
 }
 
 .App {
   height: 100vh;
+  font-family: "Nunito", sans-serif;
 }
 
 a {

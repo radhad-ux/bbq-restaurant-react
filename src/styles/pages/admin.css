@@ -1,0 +1,43 @@
+.admin_page {
+  background-color: #333333;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 80px;
+}
+.admin_header {
+  margin-bottom: 16px;
+  text-align: center;
+  color: #c0a756;
+}
+.admin_header img {
+  background-position: center;
+  background-size: cover;
+  min-width: 35vw;
+  height: 50vh;
+  display: flex;
+  margin: 80px auto 20px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+#btn_delete {
+  color: #c0a756;
+  background-color: #5d5b5b;
+}
+
+.button_details {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+#btn_add {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 40px auto;
+}
