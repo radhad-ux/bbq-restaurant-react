@@ -6,8 +6,6 @@ import InputField from "../components/InputField";
 import { useParams } from "react-router-dom";
 
 export default function AdminProductAdd() {
-  const [menus, setMenus] = useState([]);
-  const [document, setDocument] = useState({});
   const [list, setList] = useState([]);
   const [name, setName] = useState("");
   const [price, setPrice] = useState("");

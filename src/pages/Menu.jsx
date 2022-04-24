@@ -1,4 +1,3 @@
-//Project files
 import { useEffect, useState } from "react";
 import { getCollection } from "../scripts/fireStore";
 

@@ -1,15 +1,36 @@
-import { useState } from "react";
-import Loader from "./components/Loader";
+//NPM Package
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+//Project files
+import Navigation from "./components/Navigation";
+import Admin from "./pages/Admin";
+import AdminCategory from "./pages/AdminCategory";
+import AdminProduct from "./pages/AdminProduct";
+import AdminProductAdd from "./pages/AdminProductAdd";
+import Contact from "./pages/Contact";
+import Category from "./pages/Category";
+import Home from "./pages/Home";
+import Menu from "./pages/Menu";
+import Product from "./pages/Product";
 import "./styles/style.css";
 
 export default function App() {
-  const [status, setStatus] = useState(1);
-
   return (
     <div className="App">
-      {status === 0 && <p>Loading</p>}
-      {status === 1 && <Loader />}
-      {status === 2 && <p>Error Loading</p>}
+      <BrowserRouter>
+        <Navigation />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/menu" element={<Menu />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/menu/:categoryId" element={<Category />} />
+          <Route path="/menu/:categoryId/:productId" element={<Product />} />
+          <Route path="/admin" element={<Admin />} />
+          <Route path="admin/update/:id" element={<AdminCategory />} />
+          <Route path="admin/product/:id" element={<AdminProduct />} />
+          <Route path="/update/:id" element={<AdminProductAdd />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }

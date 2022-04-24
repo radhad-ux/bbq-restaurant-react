@@ -30,6 +30,7 @@ export default function Category() {
   ));
 
   if (status === 0) return <p>Loading...</p>;
+  if (status === 2) return <p>Error...</p>;
 
   return (
     <div className="category_page">

@@ -1,6 +1,5 @@
 export default function DetailsCard({ item }) {
   const { name, price, ingredients, description, imageURL } = item;
-
   const IngredientsList = ingredients.map((data, index) => (
     <span key={index}>{data}</span>
   ));

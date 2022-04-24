@@ -1,7 +1,8 @@
-import AdminCard from "../components/AdminCard";
 import { useEffect, useState } from "react";
-import { getCollection, deleteDocument } from "../scripts/fireStore";
 import { Link } from "react-router-dom";
+
+import { getCollection, deleteDocument } from "../scripts/fireStore";
+import AdminCard from "../components/AdminCard";
 
 export default function Admin() {
   const [menus, setMenus] = useState([]);
@@ -44,8 +45,7 @@ export default function Admin() {
       <header className="admin_header">
         <h1>Welcome to Admin Page</h1>
         <p>
-          Here you can add, edit or delete the restaurant menu categories and
-          products
+          Here you can add or delete the restaurant menu categories and products
         </p>
       </header>
       <section className="menu_list">{MenuItems}</section>

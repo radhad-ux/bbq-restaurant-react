@@ -1,5 +1,6 @@
 export default function ProductCard({ item }) {
   const { name, price, imageURL } = item;
+
   return (
     <section className="menu_card">
       <div className="card_image">

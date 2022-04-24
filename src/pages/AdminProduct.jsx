@@ -6,7 +6,6 @@ import ProductCard from "../components/ProductCard";
 
 export default function AdminProduct() {
   const { id } = useParams();
-
   const [document, setDocument] = useState({});
   const [list, setList] = useState([]);
   const [status, setStatus] = useState(0);
@@ -15,7 +14,6 @@ export default function AdminProduct() {
     async function loadData() {
       const documentData = await getDocument("menus", id);
       const listData = await getCollection(`menus/${id}/content/`);
-
       setDocument(documentData);
       setList(listData);
       setStatus(1);
