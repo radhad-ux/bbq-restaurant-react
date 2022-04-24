@@ -8,7 +8,7 @@
     "placeholder": "Ex: A short description of the category"
   },
   "imageURL": {
-    "label": "Avatar image URL",
+    "label": "Menu image URL",
     "placeholder": "Ex: www.f1.com/dessert/applepie.png"
   }
 }

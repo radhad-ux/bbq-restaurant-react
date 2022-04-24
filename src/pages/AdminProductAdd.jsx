@@ -10,6 +10,8 @@ export default function AdminProductAdd() {
   const [name, setName] = useState("");
   const [price, setPrice] = useState("");
   const [imageURL, setImageURL] = useState("");
+  const [description, setDescription] = useState("");
+  const [ingredients, setIngredients] = useState("");
   const { categoryId } = useParams();
   const path = `menus/${categoryId}/content/`;
 
@@ -20,21 +22,29 @@ export default function AdminProductAdd() {
       name: name,
       price: price,
       imageURL: imageURL,
+      description: description,
+      ingredients: ingredients,
     };
-    console.log(list);
-    const documentId = await createDocument(path, newProduct);
 
+    const documentId = await createDocument(path, newProduct);
     newProduct.id = documentId;
     setList([...list, newProduct]);
   }
-  console.log(list);
   return (
     <form onSubmit={onCreate}>
       <h2>Add a new Product</h2>
       <InputField setup={form.name} state={[name, setName]} />
       <InputField setup={form.price} state={[price, setPrice]} />
       <InputField setup={form.imageURL} state={[imageURL, setImageURL]} />
-      <button>Submit</button>
+      <InputField
+        setup={form.description}
+        state={[description, setDescription]}
+      />
+      <InputField
+        setup={form.ingredients}
+        state={[ingredients, setIngredients]}
+      />
+      <button className="button_primary">Submit</button>
     </form>
   );
 }

@@ -8,7 +8,7 @@
     "placeholder": "Ex: 100 kr"
   },
   "imageURL": {
-    "label": "Avatar image URL",
+    "label": "Product image URL",
     "placeholder": "Ex: www.f1.com/dessert/applepie.png"
   },
   "description": {

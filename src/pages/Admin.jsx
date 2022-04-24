@@ -50,11 +50,7 @@ export default function Admin() {
       </header>
       <section className="menu_list">{MenuItems}</section>
       <div className="admin-add">
-        <Link
-          to="update/new-category"
-          className="button_primary"
-          id="button-add"
-        >
+        <Link to="update/new-category" className="button_primary" id="btn_add">
           Add category
         </Link>
       </div>
