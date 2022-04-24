@@ -10,5 +10,13 @@
   "imageURL": {
     "label": "Avatar image URL",
     "placeholder": "Ex: www.f1.com/dessert/applepie.png"
+  },
+  "description": {
+    "label": "Product Description",
+    "placeholder": "Ex: A short description of the product"
+  },
+  "ingredients": {
+    "label": "Product Ingredients",
+    "placeholder": ""
   }
 }

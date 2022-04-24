@@ -23,3 +23,10 @@
   align-items: center;
   font-size: 36px;
 }
+
+@media screen and (max-width: 550px) {
+  .category_page .hero img {
+    width: 300px;
+    height: auto;
+  }
+}

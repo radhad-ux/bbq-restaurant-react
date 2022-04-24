@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 import form from "../data/productForm.json";
-import { createDocument, updateDocument } from "../scripts/fireStore";
+import { createDocument } from "../scripts/fireStore";
 import InputField from "../components/InputField";
 import { useParams } from "react-router-dom";
 
@@ -23,21 +23,13 @@ export default function AdminProductAdd() {
       price: price,
       imageURL: imageURL,
     };
+    console.log(list);
     const documentId = await createDocument(path, newProduct);
 
     newProduct.id = documentId;
     setList([...list, newProduct]);
   }
-
-  async function onUpdate(data) {
-    await updateDocument(path, data);
-
-    const clonedCategory = [...menus];
-    const index = clonedCategory.findIndex((item) => item.id === data.id);
-    clonedCategory[index] = data;
-    setMenus(clonedCategory);
-  }
-
+  console.log(list);
   return (
     <form onSubmit={onCreate}>
       <h2>Add a new Product</h2>

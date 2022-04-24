@@ -27,6 +27,7 @@
   justify-content: center;
   max-width: 600px;
   color: #c0a756;
+  padding: 10px;
 }
 .product_description .text {
   color: #f4e1ac;
@@ -48,4 +49,5 @@
 #btn {
   display: block;
   margin: 0 auto;
+  margin-bottom: 30px;
 }

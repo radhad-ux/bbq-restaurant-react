@@ -1,6 +1,7 @@
 .contact_page {
   margin-top: 80px;
   background-color: #333333;
+  min-height: 100vh;
 }
 .contact_page .contact_main {
   display: flex;
@@ -39,7 +40,6 @@
 
 .contact_item {
   display: flex;
-
   margin-bottom: 30px;
   margin-top: 0;
 }
@@ -52,30 +52,39 @@
   color: #c0a756;
 }
 
-.contact_form {
+#contact_form {
   display: flex;
-  flex-basis: 40%;
   flex-direction: column;
-  width: 400px;
-  height: 100%;
+  flex-basis: 60%;
 }
 
-.contact_form #message {
+#contact_form #message {
   height: 150px;
   margin-bottom: 10px;
-  background-color: #333333;
+  background-color: black;
   border: none;
 }
-.contact_form #name {
+#contact_form #name {
   height: 30px;
   margin-bottom: 10px;
-  background-color: #333333;
+  background-color: black;
   border: none;
 }
 
-.contact_form #button {
+#contact_form #button {
   height: 30px;
   background-color: #c0a756;
   color: #fff;
   font-size: 18px;
+}
+
+@media screen and (max-width: 550px) {
+  .contact_main .contact_img {
+    min-width: 350px;
+    height: 30vh;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
 }

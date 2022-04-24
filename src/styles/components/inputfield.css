@@ -37,3 +37,17 @@ form h2 {
 .back_link img {
   margin-right: 3px;
 }
+@media screen and (max-width: 500px) {
+  .input_field {
+    width: 30vw;
+    min-width: 250px;
+    margin: 20px auto;
+  }
+  .input_field input[type="text"] {
+    margin: 10px auto;
+    padding: 10px;
+    width: 100%;
+    font-size: 12px;
+    display: flex;
+  }
+}

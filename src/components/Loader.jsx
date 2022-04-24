@@ -1,15 +1,14 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Navigation from "../components/Navigation";
-import Footer from "../components/Footer";
 import Admin from "../pages/Admin";
 import AdminCategory from "../pages/AdminCategory";
 import AdminProduct from "../pages/AdminProduct";
 import AdminProductAdd from "../pages/AdminProductAdd";
 import Contact from "../pages/Contact";
+import Category from "../pages/Category";
 import Home from "../pages/Home";
 import Menu from "../pages/Menu";
-import Category from "../pages/Category";
 import Product from "../pages/Product";
 
 export default function Loader() {
@@ -27,7 +26,6 @@ export default function Loader() {
         <Route path="admin/product/:id" element={<AdminProduct />} />
         <Route path="/update/:id" element={<AdminProductAdd />} />
       </Routes>
-      {/* <Footer /> */}
     </BrowserRouter>
   );
 }

@@ -72,6 +72,9 @@
 }
 
 @media screen and (max-width: 550px) {
+  .nav_img {
+    display: none;
+  }
   .navbar_links a {
     font-weight: 200;
     font-size: 12px;
