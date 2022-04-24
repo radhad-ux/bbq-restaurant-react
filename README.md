@@ -2,7 +2,7 @@
 
 Firehouse BBQ is a multipage BBQ restaurant website with navigation to Home, Menu and Contact pages. It also has a admi page where the admin can add or delete restaurant menu categories.
 
-It is hosted on: [Firehouse BBQ]()
+It is hosted on: [Firehouse BBQ](https://bbq-restaurant-react.web.app)
 
 ---
 
@@ -20,7 +20,7 @@ You need to have the following installed before you can install and run this pro
 
 ## Installation
 
-1. Clone this repository: git clone https://github.com/radhad-ux/myportfolio-react.git
+1. Clone this repository: git clone https://github.com/radhad-ux/bbq-restaurant-react.git
 
 2. Install the dependencies by running npm install in the project directory
 
